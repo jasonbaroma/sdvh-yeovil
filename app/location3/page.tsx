@@ -5,7 +5,7 @@ import { HomePage } from "@/components/home-page";
 export default function LocationPage() {
   const locationHeroImage = {
     slot: "location3-hero",
-    src: "/images/callington-hero-country-road.jpg",
+    src: "/images/callington-hero-country-road.jpeg",
     alt: "Rental car rounding a gentle country road bend near Somerton with summer greenery and stone walls.",
   };
 

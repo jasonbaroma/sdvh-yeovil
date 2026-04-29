@@ -5,7 +5,7 @@ import { HomePage } from "@/components/home-page";
 export default function Home() {
   const homepageHeroImage = {
     slot: "homepage-hero",
-    src: "/images/homepage-hero-country-road.jpg",
+    src: "/images/homepage-hero-country-road.jpeg",
     alt: "Clean hire car travelling on a tree-lined country lane in the Somerset countryside.",
   };
 

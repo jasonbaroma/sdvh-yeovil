@@ -5,7 +5,7 @@ import { HomePage } from "@/components/home-page";
 export default function LocationPage() {
   const locationHeroImage = {
     slot: "location2-hero",
-    src: "/images/liskeard-hero-country-road.jpg",
+    src: "/images/liskeard-hero-country-road.jpeg",
     alt: "Compact SUV crossing a rural bridge near Langport with riverside meadows and open countryside.",
   };
 
