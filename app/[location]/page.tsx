@@ -13,33 +13,21 @@ import { locationSlugEntries } from "@/lib/location-links";
 const locationPages = [
   {
     component: LocationPage1,
-    metaTitle: "{{LOCATION1_META_TITLE}}",
-    metaDescription: "{{LOCATION1_META_DESCRIPTION}}",
   },
   {
     component: LocationPage2,
-    metaTitle: "{{LOCATION2_META_TITLE}}",
-    metaDescription: "{{LOCATION2_META_DESCRIPTION}}",
   },
   {
     component: LocationPage3,
-    metaTitle: "{{LOCATION3_META_TITLE}}",
-    metaDescription: "{{LOCATION3_META_DESCRIPTION}}",
   },
   {
     component: LocationPage4,
-    metaTitle: "{{LOCATION4_META_TITLE}}",
-    metaDescription: "{{LOCATION4_META_DESCRIPTION}}",
   },
   {
     component: LocationPage5,
-    metaTitle: "{{LOCATION5_META_TITLE}}",
-    metaDescription: "{{LOCATION5_META_DESCRIPTION}}",
   },
   {
     component: LocationPage6,
-    metaTitle: "{{LOCATION6_META_TITLE}}",
-    metaDescription: "{{LOCATION6_META_DESCRIPTION}}",
   },
 ];
 
@@ -61,11 +49,13 @@ export async function generateMetadata({
     return {};
   }
 
-  const page = locationPages[match.index - 1];
+  const metaTitle = `Vehicle Hire ${match.label} | Cars, Vans, Minibuses & Trucks`;
+  const areaLabel = match.county || match.region || match.label;
+  const metaDescription = `Vehicle Hire ${match.label} with cars, vans, minibuses and trucks available across ${areaLabel}. Flexible booking, delivery options and practical rental support.`;
 
   return {
-    title: page.metaTitle,
-    description: page.metaDescription,
+    title: metaTitle,
+    description: metaDescription,
     alternates: {
       canonical: `${siteUrl}/${location}`,
     },

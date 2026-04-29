@@ -1,10 +1,15 @@
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
+import { siteUrl } from "@/lib/company";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: "Vehicle Hire Yeovil | Cars, Vans, Minibuses & Trucks",
   description: "Vehicle Hire Yeovil for cars, vans, minibuses and trucks. Practical self-drive rental with flexible options, UK coverage and support for local and longer journeys.",
+  alternates: {
+    canonical: "/",
+  },
   icons: {
     icon: "https://sdvh.co.uk/wp-content/uploads/2023/02/cropped-FavIcon-32x32.png",
     apple: "https://sdvh.co.uk/wp-content/uploads/2023/02/cropped-FavIcon-180x180.png",
