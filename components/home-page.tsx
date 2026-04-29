@@ -325,6 +325,19 @@ export function HomePage({
     secondaryCtaTitle ?? "{{SECONDARY_CTA_TITLE}}";
   const resolvedSecondaryCtaDescription =
     secondaryCtaDescription ?? "{{SECONDARY_CTA_DESCRIPTION}}";
+  const resolvedHeroCardTitle = "{{HERO_CARD_TITLE}}";
+  const resolvedHeroCardPoint1 = "{{HERO_CARD_POINT_1}}";
+  const resolvedHeroCardPoint2 = "{{HERO_CARD_POINT_2}}";
+  const resolvedHeroCardPoint3 = "{{HERO_CARD_POINT_3}}";
+  const resolvedChooseVehicleTitle = "{{CHOOSE_VEHICLE_TITLE}}";
+  const resolvedChooseVehicleDescription = "{{CHOOSE_VEHICLE_DESCRIPTION}}";
+  const resolvedWhyChooseSectionTitle = "{{WHY_CHOOSE_SECTION_TITLE}}";
+  const resolvedWhyChooseParagraph1 = "{{WHY_CHOOSE_SECTION_PARAGRAPH_1}}";
+  const resolvedWhyChooseParagraph2 = "{{WHY_CHOOSE_SECTION_PARAGRAPH_2}}";
+  const resolvedVehicleTypesSectionTitle = "{{VEHICLE_TYPES_SECTION_TITLE}}";
+  const resolvedVehicleTypesParagraph1 = "{{VEHICLE_TYPES_SECTION_PARAGRAPH_1}}";
+  const resolvedVehicleTypesParagraph2 = "{{VEHICLE_TYPES_SECTION_PARAGRAPH_2}}";
+  const resolvedFaqSectionTitle = "{{FAQ_SECTION_TITLE}}";
 
   const vehicleCategories = [
     {
@@ -541,21 +554,21 @@ export function HomePage({
             <div className="grid gap-6 p-8">
               <div>
                 <h2 className="text-3xl font-semibold tracking-[-0.03em] text-slate-950">
-                  {"{{HERO_CARD_TITLE}}"}
+                  {resolvedHeroCardTitle}
                 </h2>
               </div>
               <div className="grid gap-3 text-sm text-slate-600">
                 <div className="flex items-center gap-3 rounded-2xl bg-slate-50 px-4 py-3">
                   <PhoneCall className="h-4 w-4 text-[var(--brand-green)]" />
-                  {"{{HERO_CARD_POINT_1}}"}
+                  {resolvedHeroCardPoint1}
                 </div>
                 <div className="flex items-center gap-3 rounded-2xl bg-slate-50 px-4 py-3">
                   <Clock3 className="h-4 w-4 text-[var(--brand-green)]" />
-                  {"{{HERO_CARD_POINT_2}}"}
+                  {resolvedHeroCardPoint2}
                 </div>
                 <div className="flex items-center gap-3 rounded-2xl bg-slate-50 px-4 py-3">
                   <ShieldCheck className="h-4 w-4 text-[var(--brand-green)]" />
-                  {"{{HERO_CARD_POINT_3}}"}
+                  {resolvedHeroCardPoint3}
                 </div>
               </div>
               <div className="grid gap-3 text-sm text-slate-700 sm:grid-cols-2">
@@ -587,10 +600,10 @@ export function HomePage({
       <section className="px-6 py-14">
         <div className="mx-auto max-w-7xl px-8 py-12 text-center md:px-12">
           <h2 className="text-4xl font-semibold tracking-[-0.03em] text-slate-900 md:text-6xl">
-            {"{{CHOOSE_VEHICLE_TITLE}}"}
+            {resolvedChooseVehicleTitle}
           </h2>
           <p className="mx-auto mt-6 max-w-4xl text-lg leading-8 text-slate-700">
-            {"{{CHOOSE_VEHICLE_DESCRIPTION}}"}
+            {resolvedChooseVehicleDescription}
           </p>
           <div className="mt-12 grid gap-8 md:grid-cols-4">
             {vehicleCategories.map((item) => (
@@ -620,13 +633,13 @@ export function HomePage({
               {`Why Choose SDVH ${pageLocation}`}
             </p>
             <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em] text-slate-950 md:text-5xl">
-              {"{{WHY_CHOOSE_SECTION_TITLE}}"}
+              {resolvedWhyChooseSectionTitle}
             </h2>
             <p className="mt-5 text-lg leading-8 text-slate-600">
-              {"{{WHY_CHOOSE_SECTION_PARAGRAPH_1}}"}
+              {resolvedWhyChooseParagraph1}
             </p>
             <p className="mt-5 text-lg leading-8 text-slate-600">
-              {"{{WHY_CHOOSE_SECTION_PARAGRAPH_2}}"}
+              {resolvedWhyChooseParagraph2}
             </p>
           </div>
           <div className="mt-10 grid grid-cols-2 gap-6 xl:grid-cols-4">
@@ -646,13 +659,13 @@ export function HomePage({
       <section className="mx-auto max-w-7xl px-6 py-16">
         <div className="mx-auto max-w-5xl text-center">
           <h2 className="text-4xl font-semibold tracking-[-0.03em] text-slate-950 md:text-5xl">
-            {"{{VEHICLE_TYPES_SECTION_TITLE}}"}
+            {resolvedVehicleTypesSectionTitle}
           </h2>
           <p className="mt-6 text-left text-lg leading-8 text-slate-600">
-            {"{{VEHICLE_TYPES_SECTION_PARAGRAPH_1}}"}
+            {resolvedVehicleTypesParagraph1}
           </p>
           <p className="mt-5 text-left text-lg leading-8 text-slate-600">
-            {"{{VEHICLE_TYPES_SECTION_PARAGRAPH_2}}"}
+            {resolvedVehicleTypesParagraph2}
           </p>
         </div>
         <div className="mt-14 grid gap-12 md:grid-cols-2">
@@ -769,7 +782,7 @@ export function HomePage({
             Frequently Asked Questions
           </p>
           <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em] text-slate-950 md:text-5xl">
-            {"{{FAQ_SECTION_TITLE}}"}
+            {resolvedFaqSectionTitle}
           </h2>
         </div>
         <div className="mt-10 rounded-[32px] border border-slate-200 bg-white px-6 shadow-sm">
