@@ -1,4 +1,4 @@
-const rawPhoneNumber = "{{PHONE_NUMBER}}";
+const rawPhoneNumber = "0182 353 0075";
 
 function toUkPhoneHref(phoneNumber: string) {
   const digits = String(phoneNumber || "").replace(/\D+/g, "");

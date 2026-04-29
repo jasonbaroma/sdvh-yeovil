@@ -1,7 +1,7 @@
 import { slugifyLocation } from "@/lib/utils";
 
 export const mainLocationLink = {
-  label: "{{MAIN_LOCATION_NAME}}",
+  label: "Yeovil",
   href: "/",
 };
 
@@ -14,55 +14,55 @@ type LocationMetadata = {
 };
 
 const mainLocationMetadata: LocationMetadata = {
-  label: "{{MAIN_LOCATION_NAME}}",
+  label: "Yeovil",
   href: "/",
-  county: "{{MAIN_LOCATION_COUNTY}}",
-  region: "{{MAIN_LOCATION_REGION}}",
-  population: "{{MAIN_LOCATION_POPULATION}}",
+  county: "Somerset",
+  region: "South West England",
+  population: "49698",
 };
 
 const LOCATION_METADATA: LocationMetadata[] = [
   {
-    label: "{{LOCATION_1_NAME}}",
-    href: `/${slugifyLocation("{{LOCATION_1_NAME}}")}`,
-    county: "{{LOCATION_1_COUNTY}}",
-    region: "{{LOCATION_1_REGION}}",
-    population: "{{LOCATION_1_POPULATION}}",
+    label: "Ilminster",
+    href: `/${slugifyLocation("Ilminster")}`,
+    county: "Somerset",
+    region: "South West England",
+    population: "5808",
   },
   {
-    label: "{{LOCATION_2_NAME}}",
-    href: `/${slugifyLocation("{{LOCATION_2_NAME}}")}`,
-    county: "{{LOCATION_2_COUNTY}}",
-    region: "{{LOCATION_2_REGION}}",
-    population: "{{LOCATION_2_POPULATION}}",
+    label: "Langport",
+    href: `/${slugifyLocation("Langport")}`,
+    county: "Somerset",
+    region: "South West England",
+    population: "3681",
   },
   {
-    label: "{{LOCATION_3_NAME}}",
-    href: `/${slugifyLocation("{{LOCATION_3_NAME}}")}`,
-    county: "{{LOCATION_3_COUNTY}}",
-    region: "{{LOCATION_3_REGION}}",
-    population: "{{LOCATION_3_POPULATION}}",
+    label: "Somerton",
+    href: `/${slugifyLocation("Somerton")}`,
+    county: "Somerset",
+    region: "South West England",
+    population: "4693",
   },
   {
-    label: "{{LOCATION_4_NAME}}",
-    href: `/${slugifyLocation("{{LOCATION_4_NAME}}")}`,
-    county: "{{LOCATION_4_COUNTY}}",
-    region: "{{LOCATION_4_REGION}}",
-    population: "{{LOCATION_4_POPULATION}}",
+    label: "Sherborne",
+    href: `/${slugifyLocation("Sherborne")}`,
+    county: "Dorset",
+    region: "South West England",
+    population: "9523",
   },
   {
-    label: "{{LOCATION_5_NAME}}",
-    href: `/${slugifyLocation("{{LOCATION_5_NAME}}")}`,
-    county: "{{LOCATION_5_COUNTY}}",
-    region: "{{LOCATION_5_REGION}}",
-    population: "{{LOCATION_5_POPULATION}}",
+    label: "Chard",
+    href: `/${slugifyLocation("Chard")}`,
+    county: "Somerset",
+    region: "South West England",
+    population: "13147",
   },
   {
-    label: "{{LOCATION_6_NAME}}",
-    href: `/${slugifyLocation("{{LOCATION_6_NAME}}")}`,
-    county: "{{LOCATION_6_COUNTY}}",
-    region: "{{LOCATION_6_REGION}}",
-    population: "{{LOCATION_6_POPULATION}}",
+    label: "Crewkerne",
+    href: `/${slugifyLocation("Crewkerne")}`,
+    county: "Somerset",
+    region: "South West England",
+    population: "8425",
   },
 ];
 
