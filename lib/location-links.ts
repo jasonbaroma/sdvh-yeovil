@@ -18,7 +18,7 @@ const mainLocationMetadata: LocationMetadata = {
   href: "/",
   county: "Somerset",
   region: "South West England",
-  population: "49698",
+  population: "49701",
 };
 
 const LOCATION_METADATA: LocationMetadata[] = [
@@ -28,6 +28,27 @@ const LOCATION_METADATA: LocationMetadata[] = [
     county: "Somerset",
     region: "South West England",
     population: "5808",
+  },
+  {
+    label: "Crewkerne",
+    href: `/${slugifyLocation("Crewkerne")}`,
+    county: "Somerset",
+    region: "South West England",
+    population: "8177",
+  },
+  {
+    label: "Street",
+    href: `/${slugifyLocation("Street")}`,
+    county: "Somerset",
+    region: "South West England",
+    population: "11705",
+  },
+  {
+    label: "Chard",
+    href: `/${slugifyLocation("Chard")}`,
+    county: "Somerset",
+    region: "South West England",
+    population: "13074",
   },
   {
     label: "Langport",
@@ -41,28 +62,7 @@ const LOCATION_METADATA: LocationMetadata[] = [
     href: `/${slugifyLocation("Somerton")}`,
     county: "Somerset",
     region: "South West England",
-    population: "4693",
-  },
-  {
-    label: "Sherborne",
-    href: `/${slugifyLocation("Sherborne")}`,
-    county: "Dorset",
-    region: "South West England",
-    population: "9523",
-  },
-  {
-    label: "Chard",
-    href: `/${slugifyLocation("Chard")}`,
-    county: "Somerset",
-    region: "South West England",
-    population: "13147",
-  },
-  {
-    label: "Crewkerne",
-    href: `/${slugifyLocation("Crewkerne")}`,
-    county: "Somerset",
-    region: "South West England",
-    population: "8425",
+    population: "4702",
   },
 ];
 
@@ -78,8 +78,5 @@ export function buildLocationLinks(currentLocationLabel?: string) {
   return [mainLocationLink, ...filteredNearbyLinks];
 }
 
-export const locationSlugEntries = LOCATION_METADATA.map(({ label }, index) => ({
-  index: index + 1,
-  label,
-  slug: slugifyLocation(label),
-}));
+export const locationSlugEntries = LOCATION_METADATA.map(({ label }, index) => ({`r`n  index: index + 1,`r`n  label,`r`n  county: LOCATION_METADATA[index]?.county ?? "",`r`n  region: LOCATION_METADATA[index]?.region ?? "",`r`n  slug: slugifyLocation(label),`r`n}));
+export { mainLocationMetadata };

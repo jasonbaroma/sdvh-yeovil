@@ -49,6 +49,7 @@ export async function generateMetadata({
     return {};
   }
 
+  const page = locationPages[match.index - 1];
   const metaTitle = `Vehicle Hire ${match.label} | Cars, Vans, Minibuses & Trucks`;
   const areaLabel = match.county || match.region || match.label;
   const metaDescription = `Vehicle Hire ${match.label} with cars, vans, minibuses and trucks available across ${areaLabel}. Flexible booking, delivery options and practical rental support.`;

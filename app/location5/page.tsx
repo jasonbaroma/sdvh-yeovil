@@ -6,37 +6,37 @@ export default function LocationPage() {
   const locationHeroImage = {
     slot: "location5-hero",
     src: "/images/millbrook-hero-country-road.jpeg",
-    alt: "Compact hire car parked near Chard while a driver loads a small bag into the boot.",
+    alt: "Silver estate car on a straight rural road near Langport under a wide Somerset sky",
   };
 
   return (
     <HomePage
-      currentLocationLabel="Chard"
+      currentLocationLabel="Langport"
       heroImage={locationHeroImage.src}
       heroImageAlt={locationHeroImage.alt}
-      heroTitle="Vehicle Hire Martock"
-      heroDescription="Vehicle Hire Martock for daily transport needs, local moves, business use and group travel. Sensible rental options backed by a broad fleet and practical service."
-      serviceAreasTitle="Serving Chard and nearby routes"
-      serviceAreasDescription="Our Chard vehicle hire coverage extends across the town and surrounding parts of South Somerset and East Devon, making it easy to arrange transport for local jobs and longer journeys."
-      infoContentSectionKicker="Practical hire advice"
-      infoContentSectionTitle="Vehicle hire in Chard for work, moves and longer trips"
-      infoContentSectionIntro="Vehicle hire in Martock is often chosen for straightforward practical reasons: more room, more carrying capacity, or a better vehicle for the journey ahead. Whether the need is personal or commercial, short-term hire gives you flexibility without needing a permanent larger vehicle."
-      infoContentBlock1Title="A good fit for everyday South Somerset travel"
-      infoContentBlock1Body="Martock is a place where many journeys quickly become regional rather than purely local, whether you are heading into Yeovil, across South Somerset or toward main routes further east and west. Hiring can give you the space or capacity your regular vehicle lacks."
-      infoContentBlock2Title="Useful for moving and home jobs"
-      infoContentBlock2Body="For home moves, furniture collections and garden or renovation projects, a van or truck can save repeated loading and unloading. Getting the right size from the start is usually the simplest way to keep the day on track."
-      infoContentBlock3Title="Keeping the booking convenient"
-      infoContentBlock3Body="When time matters, delivery and collection can make hiring in Martock much more convenient. It helps you stay focused on the job, especially if other people are involved or access to a second driver is limited."
-      bottomCtaTitle="Plan your Martock vehicle hire"
-      bottomCtaDescription="We can help you sort the right vehicle for Martock, whether the job is local, regional or part of a longer route."
-      secondaryCtaTitle="Check Chard vehicle availability"
-      secondaryCtaDescription="If you already know the dates and vehicle type you need, we can help you arrange a straightforward booking for Chard and nearby areas."
+      heroTitle="Vehicle Hire Langport"
+      heroDescription="Straightforward vehicle hire in Langport for rural journeys, home moves, work transport and trips across Somerset."
+      serviceAreasTitle="Vehicle hire for Langport and surrounding villages"
+      serviceAreasDescription="We support Langport and nearby Somerset villages with vehicle hire for local errands, countryside routes, business journeys and practical transport needs."
+      infoContentSectionKicker="Planning your hire"
+      infoContentSectionTitle="Hiring a vehicle for Langport and the Levels"
+      infoContentSectionIntro="In Langport, vehicle hire is often the practical answer for market-day loads, home moves, trade jobs and family trips across the Somerset Levels. With the A372 running through town and the A303 within easy reach, a suitable car, van, minibus or truck helps keep local journeys and longer runs straightforward."
+      infoContentBlock1Title="A practical base for multi-stop travel"
+      infoContentBlock1Body="Somerton sits between several useful local centres, so hired vehicles are often used for trips towards Street, Yeovil, Langport and the A37 or A303 approach roads. That makes it a sensible place to start a job when your day involves several stops rather than one short journey."
+      infoContentBlock2Title="Choosing the right size for local roads"
+      infoContentBlock2Body="With a historic town layout and surrounding rural roads, it helps to think about turning space and loading access before choosing a larger vehicle. For furniture collection, event equipment or trade work, the right size van can save repeat trips and reduce wasted time."
+      infoContentBlock3Title="Everyday uses around Somerton"
+      infoContentBlock3Body="Somerton hire is useful for domestic projects, visiting family across Somerset and handling seasonal or part-time business demand without adding a permanent vehicle. Nearby fuel and convenience stops are easier to find on the main routes out of town, so planning ahead is worthwhile for longer hires."
+      bottomCtaTitle="Arrange hire in Langport"
+      bottomCtaDescription="Plan your Langport vehicle hire with support for local journeys, business needs, moving jobs and wider travel across Somerset."
+      secondaryCtaTitle="Looking at vehicles in Langport?"
+      secondaryCtaDescription="Let us know what you need from your Langport hire and we will help you choose a suitable option from the wider fleet."
       faqs={[
-        { question: "Can I choose from different vehicle types in Martock?", answer: "Yes. Martock customers can book across the wider fleet, including cars, vans, minibuses and trucks." },
-        { question: "Do you offer delivery in Martock?", answer: "Delivery and collection can often be arranged, which is useful if you are planning around home, work or moving-day timing." },
-        { question: "Can I hire a vehicle one way from Martock?", answer: "One-way hire is available on selected bookings. If you do not plan to return to the starting area, tell us when you enquire." },
-        { question: "Is insurance part of the hire agreement?", answer: "Standard hire includes insurance, and we can explain the setup clearly before you confirm the rental." },
-        { question: "Can a Martock hire be used for travel in Europe?", answer: "Yes, European travel may be possible on some vehicles, provided it is arranged in advance." },
+        { question: "Can I book a vehicle in Langport for everyday local use?", answer: "Yes, we can arrange vehicle hire for Langport customers, subject to the normal availability and driver checks." },
+        { question: "What journeys are common from Langport?", answer: "Yes, delivery and collection can often be arranged in Langport and nearby villages, which is especially useful if you are hiring for a move, a family trip or temporary business transport. Availability depends on the vehicle and booking details." },
+        { question: "Do you offer vans in Langport for house moves or deliveries?", answer: "One-way bookings are possible on selected vehicles and routes. If you are ending your journey in another town or region, ask us to check availability." },
+        { question: "Is Langport suitable for hiring a larger vehicle for country routes?", answer: "Many hires include insurance as standard, with cover based on the vehicle and intended journey. We explain the booking terms clearly before confirmation." },
+        { question: "Can I hire for business travel from Langport?", answer: "European travel may be possible with some vehicles if agreed before travel. Advance notice helps us confirm the right paperwork and eligibility." },
       ]}
     />
   );

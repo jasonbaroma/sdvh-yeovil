@@ -5,8 +5,8 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Vehicle Hire Yeovil | Cars, Vans, Minibuses & Trucks",
-  description: "Vehicle Hire Yeovil for cars, vans, minibuses and trucks. Practical self-drive rental with flexible options, UK coverage and support for local and longer journeys.",
+  title: "Vehicle Hire Barnstaple | Cars, Vans, Minibuses & Trucks",
+  description: "Vehicle hire in Barnstaple for cars, vans, minibuses and trucks. Practical self-drive options with flexible booking, local support and wide area coverage.",
   alternates: {
     canonical: "/",
   },

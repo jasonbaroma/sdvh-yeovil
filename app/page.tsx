@@ -6,7 +6,7 @@ export default function Home() {
   const homepageHeroImage = {
     slot: "homepage-hero",
     src: "/images/homepage-hero-country-road.jpeg",
-    alt: "Clean hire car travelling on a tree-lined country lane in the Somerset countryside.",
+    alt: "Modern estate car travelling on a tree-lined rural road in the Yeovil area at golden hour",
   };
 
   return (
@@ -14,28 +14,28 @@ export default function Home() {
       heroImage={homepageHeroImage.src}
       heroImageAlt={homepageHeroImage.alt}
       heroTitle="Vehicle Hire Yeovil"
-      heroDescription="Vehicle Hire Yeovil for cars, vans, minibuses and trucks. Flexible rental for business use, personal travel, moves and planned transport across the UK."
-      serviceAreasTitle="Areas we cover around Yeovil"
-      serviceAreasDescription="We provide vehicle hire in Yeovil and across surrounding towns in Somerset and nearby counties, helping private and business customers access the right vehicle when they need it."
-      infoContentSectionKicker="Local hire guidance"
-      infoContentSectionTitle="Useful vehicle hire advice for getting around Yeovil"
-      infoContentSectionIntro="Hiring a vehicle in Yeovil can be the easiest way to handle everything from a local flat move to a business delivery run or a family trip that needs more space. With strong road links across South Somerset and toward the wider South West, the right hire vehicle can take pressure off your schedule and keep the journey straightforward."
-      infoContentBlock1Title="Picking a vehicle for local and regional routes"
-      infoContentBlock1Body="Yeovil sits well for routes across South Somerset and onward towards Sherborne, Crewkerne and the A303, so hire often makes sense when your own vehicle is too small, unavailable or not suited to the trip. Choosing the right size from the start can save time on the day."
-      infoContentBlock2Title="Making collections, moves and deliveries simpler"
-      infoContentBlock2Body="For home moves, furniture collections or business deliveries around Yeovil, delivery and collection can make the booking much easier to manage. It is especially useful when you are coordinating keys, loading help, or work schedules across more than one address."
-      infoContentBlock3Title="Planning longer trips from Yeovil"
-      infoContentBlock3Body="Yeovil is a practical base for longer drives across the South West and beyond, whether you need a car for comfort, a minibus for group travel or a truck for commercial transport. If your route is not a simple out-and-back journey, ask about one-way and longer-distance options."
+      heroDescription="From compact cars to Luton vans, minibuses and larger trucks, we help drivers in Yeovil find practical self-drive hire for business use, local moves and longer UK journeys."
+      serviceAreasTitle="Vehicle hire coverage around Yeovil"
+      serviceAreasDescription="From Yeovil we cover surrounding Somerset towns and nearby routes into Dorset and beyond, making it easy to arrange car, van, minibus and truck hire where you need it."
+      infoContentSectionKicker="Local hire advice"
+      infoContentSectionTitle="Practical vehicle hire guidance for Yeovil journeys"
+      infoContentSectionIntro="Hiring a vehicle in Yeovil often comes down to convenience. The town is a working hub for South Somerset, with regular business travel, residential moves and onward routes towards Dorset, the A303 corridor and the wider South West."
+      infoContentBlock1Title="Roads that make local hire practical"
+      infoContentBlock1Body="Yeovil sits well for cross-county travel, with the A30 running through town and quick links to the A37 and A303. That makes hired vehicles useful for work trips, home moves and collecting larger items without relying on multiple local runs."
+      infoContentBlock2Title="Make collection simpler"
+      infoContentBlock2Body="If you need a van, minibus or truck but do not want to collect from a depot, delivery can save time. For homes, offices and sites around Yeovil, that can make planning much easier, especially on short notice or tight schedules."
+      infoContentBlock3Title="Useful for onward travel across the area"
+      infoContentBlock3Body="Yeovil is a sensible starting point for journeys towards Sherborne, Dorchester, Taunton and South Somerset villages. Whether you need extra seats for a group or more load space for equipment, hiring locally gives you flexibility without long detours first."
       bottomCtaTitle="Book the right vehicle for Yeovil"
-      bottomCtaDescription="Tell us what you need to move, carry or plan for, and we will help you choose a vehicle that fits the job."
-      secondaryCtaTitle="Talk through your hire options"
-      secondaryCtaDescription="Need something specific for an upcoming trip, move or work booking? Speak to our team and we will help match the right vehicle to your plans."
+      bottomCtaDescription="Tell us what you need to move, carry or plan, and we will help match the right vehicle for the job in Yeovil and beyond."
+      secondaryCtaTitle="Talk through your Yeovil hire"
+      secondaryCtaDescription="Tell us what you need to move, carry or organise and we will point you towards the right vehicle for your trip from Yeovil."
       faqs={[
-        { question: "What types of vehicles can I hire?", answer: "We hire out cars, vans, minibuses and trucks, so whether you need a small runabout or something for a larger transport job, we can help match the vehicle to the task." },
-        { question: "Do you offer delivery and collection?", answer: "Yes, delivery and collection can be arranged in many areas. Availability will depend on the vehicle, location and timing of your booking." },
-        { question: "Can I book a one-way rental?", answer: "Some bookings can be arranged as one-way hire, which is useful if you are moving, relocating stock or finishing your journey in another town or city." },
-        { question: "Can I take the vehicle into Europe?", answer: "European travel may be possible on selected hires. Let us know your plans before booking so we can confirm vehicle suitability and the right cover." },
-        { question: "Is insurance included with the hire?", answer: "Included cover is part of the standard hire setup. If you have questions about what is included or want to discuss your own insurance, just ask before booking." },
+        { question: "What types of vehicles can I hire in Yeovil?", answer: "We provide car hire, van hire, minibus hire and truck hire, so you can book for anything from a weekend away to a house move or commercial delivery." },
+        { question: "Can you deliver a hire vehicle to my address?", answer: "Yes, delivery and collection can often be arranged across Yeovil and nearby areas, which is useful if you are short on time or need the vehicle brought to your home or site." },
+        { question: "Do you offer one-way vehicle hire?", answer: "One-way hire is available on selected bookings, subject to route and vehicle type. It is a practical option if you are relocating or finishing your journey in a different part of the UK." },
+        { question: "Is insurance included with the hire?", answer: "Many hires include insurance as part of the booking. The exact cover depends on the vehicle and journey, so we confirm the details clearly before you travel." },
+        { question: "Can I take a hire vehicle from Yeovil to Europe?", answer: "Some vehicles can be taken into Europe by prior arrangement. Let us know your travel plans early so we can check availability and the paperwork needed." },
       ]}
     />
   );

@@ -6,37 +6,37 @@ export default function LocationPage() {
   const locationHeroImage = {
     slot: "location3-hero",
     src: "/images/callington-hero-country-road.jpeg",
-    alt: "Rental car rounding a gentle country road bend near Somerton with summer greenery and stone walls.",
+    alt: "Silver family car driving near the edge of Street with village stone walls and countryside beyond",
   };
 
   return (
     <HomePage
-      currentLocationLabel="Somerton"
+      currentLocationLabel="Street"
       heroImage={locationHeroImage.src}
       heroImageAlt={locationHeroImage.alt}
-      heroTitle="Vehicle Hire Crewkerne"
-      heroDescription="Vehicle Hire Crewkerne for local convenience and longer road trips. Flexible rental for cars, vans, minibuses and trucks, with practical support for home, work and transport needs."
-      serviceAreasTitle="Covering Crewkerne and the surrounding area"
-      serviceAreasDescription="We support customers in Crewkerne and nearby villages with flexible vehicle hire for moving, travel, delivery work and wider regional journeys."
+      heroTitle="Vehicle Hire Street"
+      heroDescription="Reliable vehicle hire in Street for shopping trips, family travel, local business needs and practical transport across Somerset."
+      serviceAreasTitle="Vehicle hire around Street"
+      serviceAreasDescription="Our coverage includes Street and nearby parts of mid-Somerset, supporting private and business customers with flexible vehicle hire for short and longer journeys."
       infoContentSectionKicker="Local hire guidance"
-      infoContentSectionTitle="Straightforward vehicle hire planning for Crewkerne customers"
-      infoContentSectionIntro="In Crewkerne, vehicle hire is often about flexibility. People need temporary transport for projects, larger shopping runs, family occasions or business jobs, and having access to the right vehicle at the right time can make a busy day much easier to control."
-      infoContentBlock1Title="Good for longer drives beyond town"
-      infoContentBlock1Body="Crewkerne works well as a starting point for journeys into South Somerset, West Dorset and East Devon, so hire is often chosen by people who need a vehicle for more than a short local errand. Extra room and the right body type can make those longer routes much more manageable."
-      infoContentBlock2Title="Helpful when home projects gather pace"
-      infoContentBlock2Body="For local moves and home projects, vans are often the most practical choice, especially when you are collecting furniture, tools or renovation materials. Hiring for a day or a weekend can be a straightforward way to get the job done without borrowing or making multiple trips."
-      infoContentBlock3Title="Keeping the plan simple on the day"
-      infoContentBlock3Body="If your booking starts or ends at a residential address in Crewkerne, delivery and collection can save time and reduce the number of arrangements you need to juggle. That is particularly useful when other people are involved in loading or unloading."
-      bottomCtaTitle="Start your Crewkerne booking"
-      bottomCtaDescription="If you need a vehicle in Crewkerne for travel, transport or a move, we can help you get organised quickly."
-      secondaryCtaTitle="Compare options for Crewkerne"
-      secondaryCtaDescription="Not sure which vehicle is best for your route or load? We can help you narrow it down before you commit."
+      infoContentSectionTitle="Practical hire advice for driving in Street"
+      infoContentSectionIntro="Street is a practical place to hire a vehicle if you need easy access around mid-Somerset, whether you are heading into Glastonbury, travelling on towards Wells and Bridgwater, or managing a move or delivery locally. With busy retail traffic around the Clarks Village area and regular onward journeys across the county, having the right vehicle can save time and make planning easier."
+      infoContentBlock1Title="Quick access to the A303"
+      infoContentBlock1Body="Ilminster stands close to the A303, so it is a strong choice for drivers heading east-west across the South West. Whether you are moving equipment, visiting multiple sites or setting off early for a longer trip, hiring locally can save wear on your own vehicle and make motorway-style travel easier."
+      infoContentBlock2Title="Refuelling before longer runs"
+      infoContentBlock2Body="The town has useful day-to-day amenities, while larger refuelling and stop options sit along the main road network around the A303 and A358 approaches. If you are taking a van or truck, planning your fuel stop before joining faster routes can keep the day running smoothly."
+      infoContentBlock3Title="Common journeys from Ilminster"
+      infoContentBlock3Body="Ilminster hire often suits practical routes towards Taunton, Chard and South Somerset villages, as well as leisure travel into the Blackdown Hills. A larger vehicle can also be useful for market, retail or event-related transport where a normal family car is too limited."
+      bottomCtaTitle="Start your Street vehicle hire"
+      bottomCtaDescription="Arrange vehicle hire in Street with a fleet suited to family travel, local moves, business use and longer-distance driving."
+      secondaryCtaTitle="Compare Street hire options"
+      secondaryCtaDescription="Tell us what you need in Street and we will help match you with a suitable vehicle for the job or journey."
       faqs={[
-        { question: "What kind of vehicle hire is available in Crewkerne?", answer: "We offer vehicles suitable for everyday trips, removals, business use and group travel, so the booking can be matched to what you actually need to do." },
-        { question: "Do you deliver hire vehicles to Crewkerne?", answer: "Yes, in many cases we can arrange delivery and collection around Crewkerne, subject to the vehicle and booking schedule." },
-        { question: "Can I do a one-way hire from Crewkerne?", answer: "Some hires can be set up as one-way rentals. It depends on the vehicle and destination, so it is best to ask when booking." },
-        { question: "Is cover included with the vehicle?", answer: "Standard hire includes insurance. If you would like clarification on the cover or have your own policy to discuss, just let us know." },
-        { question: "Are European trips possible from Crewkerne?", answer: "European travel is available on selected bookings, but it needs prior approval so the vehicle and documentation are prepared correctly." },
+        { question: "Can I book vehicle hire in Street for a weekend?", answer: "Yes, we can help arrange vehicle hire for customers in Street, subject to vehicle availability and the usual booking checks." },
+        { question: "What kind of trips do people hire vehicles for in Street?", answer: "Street is well placed for trips towards Glastonbury, Wells, Bridgwater and the wider Somerset area, so many customers hire for shopping runs, family visits, events and practical transport needs." },
+        { question: "Do you offer vans as well as cars in Street?", answer: "One-way hire can often be arranged on selected routes and vehicle categories. It is worth asking early if your return point will be elsewhere in the UK." },
+        { question: "Is Street a useful base for longer drives across Somerset?", answer: "Insurance is commonly included with many bookings, with cover confirmed according to the vehicle and intended use before the hire starts." },
+        { question: "Can I hire a larger vehicle in Street for a group trip or move?", answer: "European travel is possible on some vehicles by prior agreement. We can confirm what is suitable once we know your travel dates and destination." },
       ]}
     />
   );
