@@ -777,7 +777,7 @@ export function HomePage({
                 <Link
                   key={location.href}
                   href={location.href}
-                  className="rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-[var(--brand-green)]/40 hover:text-[var(--brand-green)]"
+                  className="rounded-full border border-[var(--brand-green)]/55 bg-white px-4 py-2 text-[1.1rem] font-bold text-slate-700 transition hover:border-[var(--brand-green)] hover:text-[var(--brand-green)]"
                 >
                   {location.label}
                 </Link>
