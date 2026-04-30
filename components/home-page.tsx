@@ -812,7 +812,7 @@ export function HomePage({
       </section>
 
       <footer className="border-t border-[var(--brand-green-dark)] bg-[var(--brand-green)] text-white">
-        <div className="mx-auto grid max-w-7xl gap-10 px-6 py-14 md:grid-cols-[1.2fr_0.8fr]">
+        <div className="mx-auto flex max-w-7xl flex-col gap-8 px-6 py-14">
           <div>
             <div className="flex items-center gap-3">
               <Image
