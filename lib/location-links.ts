@@ -81,7 +81,5 @@ export function buildLocationLinks(currentLocationLabel?: string) {
 export const locationSlugEntries = LOCATION_METADATA.map(({ label }, index) => ({
   index: index + 1,
   label,
-  county: LOCATION_METADATA[index]?.county ?? "",
-  region: LOCATION_METADATA[index]?.region ?? "",
   slug: slugifyLocation(label),
 }));

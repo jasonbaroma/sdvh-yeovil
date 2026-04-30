@@ -286,6 +286,13 @@ export function HomePage({
     if (!text) return false;
     return text.toLowerCase().includes(location.toLowerCase());
   };
+  const resolveLocationText = (text: string | undefined, fallback: string) => {
+    if (!currentLocationLabel) {
+      return text ?? fallback;
+    }
+
+    return textMatchesLocation(text, currentLocationLabel) ? text! : fallback;
+  };
 
   const heroBackgroundImage = heroImage ?? "/images/homepage-hero-country-road.jpg";
   const resolvedHeroImageAlt =
@@ -305,34 +312,63 @@ export function HomePage({
         : `Vehicle Hire ${currentLocationLabel} for local convenience and longer road trips. Flexible rental for cars, vans, minibuses and trucks, with practical support for home, work and transport needs.`
       : heroDescription ??
         `Vehicle Hire ${mainLocationName} for cars, vans, minibuses and trucks. Flexible rental options for personal travel, business use, local moves and longer UK journeys.`;
-  const resolvedServiceAreasTitle = serviceAreasTitle ?? "Covering Barnstaple and nearby North Devon towns";
-  const resolvedServiceAreasDescription =
-    serviceAreasDescription ?? "Based around Barnstaple, we cover North Devon towns and surrounding areas with self-drive car hire, van hire, minibus hire and truck hire for business and personal use.";
-  const resolvedInfoContentSectionKicker =
-    infoContentSectionKicker ?? "Local hire guidance";
-  const resolvedInfoContentSectionTitle =
-    infoContentSectionTitle ?? "Planning vehicle hire in and around Barnstaple";
-  const resolvedInfoContentSectionIntro =
-    infoContentSectionIntro ?? "Barnstaple sits at the centre of many everyday journeys in North Devon, so vehicle hire here is often about practicality. Whether you need extra load space, more seats or a reliable vehicle for a longer trip, the right rental can make local and regional travel much easier.";
-  const resolvedInfoContentBlock1Title =
-    infoContentBlock1Title ?? "Getting around North Devon efficiently";
-  const resolvedInfoContentBlock1Body =
-    infoContentBlock1Body ?? "Barnstaple is a practical base for travel across North Devon, whether you are heading towards Braunton, Bideford, South Molton or the coast. Hiring locally can make sense when your own vehicle is too small, unavailable or simply not suited to the journey ahead.";
-  const resolvedInfoContentBlock2Title =
-    infoContentBlock2Title ?? "Useful options for work and moving days";
-  const resolvedInfoContentBlock2Body =
-    infoContentBlock2Body ?? "Van and truck hire is often useful in Barnstaple for home moves, furniture collection, site work and trade deliveries. If you need the vehicle brought to your address or workplace, delivery can save time and simplify the day.";
-  const resolvedInfoContentBlock3Title =
-    infoContentBlock3Title ?? "Choosing the right vehicle for the route";
-  const resolvedInfoContentBlock3Body =
-    infoContentBlock3Body ?? "For family trips, group travel and longer drives through Devon and beyond, choosing the right size vehicle matters. A car, 7-seater or minibus can give you the extra room you need without turning the journey into a squeeze.";
-  const resolvedBottomCtaTitle = bottomCtaTitle ?? "Book the right vehicle for your trip";
-  const resolvedBottomCtaDescription =
-    bottomCtaDescription ?? `Tell us what you need to move, carry or plan, and we will help you find a suitable hire vehicle in ${pageLocation}.`;
-  const resolvedSecondaryCtaTitle =
-    secondaryCtaTitle ?? `Talk through your ${pageLocation} hire plans`;
-  const resolvedSecondaryCtaDescription =
-    secondaryCtaDescription ?? `If you want to compare vehicle sizes, trip suitability or delivery options in ${pageLocation}, speak to our team and we will help you narrow it down.`;
+  const resolvedServiceAreasTitle = resolveLocationText(
+    serviceAreasTitle,
+    `Vehicle hire across ${pageLocation} and nearby areas`,
+  );
+  const resolvedServiceAreasDescription = resolveLocationText(
+    serviceAreasDescription,
+    `We provide vehicle hire across ${pageLocation} and nearby towns, with practical support for local journeys, one-way trips, business use and longer-distance travel.`,
+  );
+  const resolvedInfoContentSectionKicker = infoContentSectionKicker ?? "Local hire guidance";
+  const resolvedInfoContentSectionTitle = resolveLocationText(
+    infoContentSectionTitle,
+    `Practical vehicle hire advice for ${pageLocation} journeys`,
+  );
+  const resolvedInfoContentSectionIntro = resolveLocationText(
+    infoContentSectionIntro,
+    `Hiring a vehicle in ${pageLocation} often comes down to practicality. Whether the job is personal travel, moving day, trade work or a longer drive, having the right vehicle ready can make the route easier to manage.`,
+  );
+  const resolvedInfoContentBlock1Title = resolveLocationText(
+    infoContentBlock1Title,
+    `Getting around ${pageLocation} and beyond`,
+  );
+  const resolvedInfoContentBlock1Body = resolveLocationText(
+    infoContentBlock1Body,
+    `${pageLocation} works well as a starting point for local travel and longer regional routes. Hiring the right vehicle can save repeated trips, make carrying easier and help you plan around real road use rather than making do with the wrong setup.`,
+  );
+  const resolvedInfoContentBlock2Title = resolveLocationText(
+    infoContentBlock2Title,
+    "Useful hire for moving and carrying",
+  );
+  const resolvedInfoContentBlock2Body = resolveLocationText(
+    infoContentBlock2Body,
+    `For house moves, deliveries, furniture collection and work equipment, extra load space can make a big difference in ${pageLocation}. A van, minibus or larger vehicle can turn a difficult day into a much more straightforward one.`,
+  );
+  const resolvedInfoContentBlock3Title = resolveLocationText(
+    infoContentBlock3Title,
+    `Built for local and longer-distance use`,
+  );
+  const resolvedInfoContentBlock3Body = resolveLocationText(
+    infoContentBlock3Body,
+    `From short trips around ${pageLocation} to longer UK routes, choosing the right hire vehicle early helps keep travel simple. It gives you the space, flexibility and route suitability you need without overcomplicating the journey.`,
+  );
+  const resolvedBottomCtaTitle = resolveLocationText(
+    bottomCtaTitle,
+    "Book the right vehicle for your trip",
+  );
+  const resolvedBottomCtaDescription = resolveLocationText(
+    bottomCtaDescription,
+    `Tell us what you need to move, carry or plan, and we will help you find a suitable hire vehicle in ${pageLocation}.`,
+  );
+  const resolvedSecondaryCtaTitle = resolveLocationText(
+    secondaryCtaTitle,
+    `Talk through your ${pageLocation} hire plans`,
+  );
+  const resolvedSecondaryCtaDescription = resolveLocationText(
+    secondaryCtaDescription,
+    `If you want to compare vehicle sizes, trip suitability or delivery options in ${pageLocation}, speak to our team and we will help you narrow it down.`,
+  );
   const resolvedHeroCardTitle = `Straightforward ${pageLocation} hire support`;
   const resolvedHeroCardPoint1 = `${pageLocation} cars to trucks`;
   const resolvedHeroCardPoint2 = `Delivery available in ${pageLocation}`;
@@ -460,16 +496,14 @@ export function HomePage({
     },
   ];
 
-  const faqItems =
-    faqs ??
-    [
+  const defaultFaqItems = [
       {
         question: "What types of vehicles can I hire?",
-        answer: "We provide car hire, van hire, minibus hire and truck hire, so you can book for anything from a weekend away to a business delivery or house move.",
+        answer: `We provide car hire, van hire, minibus hire and truck hire in ${pageLocation}, so you can book for anything from a weekend away to a business delivery or house move.`,
       },
       {
         question: "Do you offer delivery and collection?",
-        answer: "Yes, delivery and collection is available in many areas. Let us know your location and preferred timing when you enquire, and we will confirm the options.",
+        answer: `Yes, delivery and collection is available in many areas around ${pageLocation}. Let us know your location and preferred timing when you enquire, and we will confirm the options.`,
       },
       {
         question: "Can I arrange a one-way rental?",
@@ -484,6 +518,11 @@ export function HomePage({
         answer: "Many hires include unlimited mileage, depending on the vehicle and rental type. We will confirm this clearly when you book.",
       },
     ];
+
+  const faqItems =
+    currentLocationLabel && faqs && !faqs.some((item) => textMatchesLocation(`${item.question} ${item.answer}`, currentLocationLabel))
+      ? defaultFaqItems
+      : faqs ?? defaultFaqItems;
 
   return (
     <div className="min-h-screen bg-[var(--page-background)] text-slate-900">
