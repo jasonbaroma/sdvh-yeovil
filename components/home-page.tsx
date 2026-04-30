@@ -489,7 +489,7 @@ export function HomePage({
               height={62}
               className="h-11 w-auto"
             />
-            <span className="text-[1.35rem] font-semibold tracking-[-0.02em] text-white">
+            <span className="text-[2.025rem] font-semibold tracking-[-0.02em] text-white">
               {mainLocationName}
             </span>
           </Link>
