@@ -812,9 +812,9 @@ export function HomePage({
       </section>
 
       <footer className="border-t border-[var(--brand-green-dark)] bg-[var(--brand-green)] text-white">
-        <div className="mx-auto flex max-w-7xl flex-col gap-8 px-6 py-14">
+        <div className="mx-auto flex max-w-7xl flex-col items-center gap-8 px-6 py-14 text-center md:items-start md:text-left">
           <div>
-            <div className="flex items-center gap-3">
+            <div className="flex items-center justify-center gap-3 md:justify-start">
               <Image
                 src="/images/SDVH_logo.svg"
                 alt={companyName}
