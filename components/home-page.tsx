@@ -635,7 +635,7 @@ export function HomePage({
               {resolvedWhyChooseParagraph2}
             </p>
           </div>
-          <div className="mt-10 grid grid-cols-2 gap-6 xl:grid-cols-4">
+          <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
             {benefits.map((item) => (
               <Card key={item.title} className="rounded-[28px] border-slate-200 p-7">
                 <div className={`flex w-full justify-center ${item.iconWrapperClassName ?? "rounded-2xl bg-[var(--brand-green-soft)] p-3"} ${item.iconClassName ?? "text-[var(--brand-green)]"}`}>
