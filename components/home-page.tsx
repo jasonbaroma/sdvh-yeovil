@@ -805,7 +805,7 @@ export function HomePage({
       </section>
 
       <footer className="border-t border-[var(--brand-green-dark)] bg-[var(--brand-green)] text-white">
-        <div className="mx-auto grid max-w-7xl gap-10 px-6 py-14 md:grid-cols-[1.2fr_0.8fr_0.8fr]">
+        <div className="mx-auto grid max-w-7xl gap-10 px-6 py-14 md:grid-cols-[1.2fr_0.8fr]">
           <div>
             <Image
               src="/images/SDVH_logo.svg"
@@ -814,14 +814,6 @@ export function HomePage({
               height={62}
               className="h-11 w-auto"
             />
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold text-white">Menu</h3>
-            <div className="mt-4 grid gap-3 text-sm text-green-50">
-              <Link href="/">Home</Link>
-              <a href="#vehicle-types">Vehicle Types</a>
-              <a href={phoneHref}>Contact Us</a>
-            </div>
           </div>
           <div>
             <h3 className="text-lg font-semibold text-white">Contact</h3>
