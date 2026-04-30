@@ -606,6 +606,13 @@ export function HomePage({
                 <p className="mt-5 text-3xl font-semibold tracking-[-0.02em] text-[var(--brand-green)]">
                   {item.title}
                 </p>
+                <Button
+                  size="sm"
+                  className="mt-4 rounded-full bg-[var(--brand-blue)] px-5 text-sm text-white hover:bg-[var(--brand-blue-dark)]"
+                  asChild
+                >
+                  <a href={phoneHref}>Book Now</a>
+                </Button>
               </div>
             ))}
           </div>
