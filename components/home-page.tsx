@@ -480,7 +480,7 @@ export function HomePage({
   return (
     <div className="min-h-screen bg-[var(--page-background)] text-slate-900">
       <header className="sticky top-0 z-50 border-b border-[var(--brand-green-dark)] bg-[var(--brand-green)] backdrop-blur">
-        <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-4">
+        <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-4 px-4 py-4 sm:justify-between sm:px-6">
           <Link href="/" className="flex items-center gap-3">
             <Image
               src="/images/SDVH_logo.svg"
@@ -489,11 +489,11 @@ export function HomePage({
               height={62}
               className="h-11 w-auto"
             />
-            <span className="text-[2.025rem] font-semibold tracking-[-0.02em] text-white">
+            <span className="text-[1.65rem] font-semibold tracking-[-0.02em] text-white sm:text-[2.025rem]">
               {mainLocationName}
             </span>
           </Link>
-          <nav className="hidden items-center gap-3 lg:flex">
+          <nav className="flex w-full flex-wrap items-center justify-center gap-3 sm:w-auto sm:justify-end">
             <details className="group relative">
               <summary className="flex cursor-pointer list-none items-center gap-2 rounded-full border border-white/20 px-4 py-2 text-sm font-medium text-white transition hover:bg-white/10">
                 Locations
