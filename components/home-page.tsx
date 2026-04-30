@@ -591,7 +591,7 @@ export function HomePage({
           <p className="mx-auto mt-6 max-w-4xl text-lg leading-8 text-slate-700">
             {resolvedChooseVehicleDescription}
           </p>
-          <div className="mt-12 grid gap-8 md:grid-cols-4">
+          <div className="mt-12 grid grid-cols-2 gap-8 md:grid-cols-4">
             {vehicleCategories.map((item) => (
               <div key={item.title} className="flex flex-col items-center">
                 <div className="relative flex h-32 w-full max-w-[207px] items-center justify-center p-4">
