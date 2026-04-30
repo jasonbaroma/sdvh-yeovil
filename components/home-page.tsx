@@ -519,11 +519,11 @@ export function HomePage({
       </header>
 
       <section className="border-b border-[var(--brand-green)]/15 bg-white">
-        <div className="mx-auto grid max-w-7xl grid-cols-2 items-center justify-items-center gap-x-6 gap-y-2 px-4 py-3 text-center text-sm font-bold text-[var(--brand-green)] md:flex md:flex-wrap md:items-center md:justify-center md:gap-x-32 md:px-6">
-          <span className="w-full">One Way Rentals</span>
-          <span className="w-full">Unlimited Mileage</span>
-          <span className="w-full">Free Delivery & Collection</span>
-          <span className="w-full">Entire UK Coverage</span>
+        <div className="mx-auto grid max-w-7xl grid-cols-2 items-center justify-items-center gap-x-6 gap-y-2 px-4 py-3 text-center text-sm font-bold text-[var(--brand-green)] md:flex md:flex-nowrap md:items-center md:justify-center md:gap-x-32 md:px-6">
+          <span className="w-full md:w-auto">One Way Rentals</span>
+          <span className="w-full md:w-auto">Unlimited Mileage</span>
+          <span className="w-full md:w-auto">Free Delivery & Collection</span>
+          <span className="w-full md:w-auto">Entire UK Coverage</span>
         </div>
       </section>
 
