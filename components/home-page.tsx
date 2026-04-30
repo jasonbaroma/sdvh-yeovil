@@ -538,14 +538,14 @@ export function HomePage({
           />
         </div>
         <div className="relative mx-auto grid max-w-7xl gap-10 px-6 py-20 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:py-28">
-          <div className="max-w-3xl text-white">
-            <div className="inline-flex rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm font-medium text-white/90 backdrop-blur">
+          <div className="max-w-4xl rounded-[32px] border border-white/10 bg-slate-950/30 p-6 text-white shadow-[0_30px_90px_-40px_rgba(15,23,42,0.95)] backdrop-blur-md md:p-8">
+            <div className="inline-flex rounded-full border border-white/20 bg-white/12 px-4 py-2 text-sm font-medium text-white/90 backdrop-blur">
               {pageLocation}
             </div>
             <h1 className="mt-6 text-5xl font-semibold tracking-[-0.03em] text-balance md:text-6xl">
               {pageTitle}
             </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-200 md:text-xl">
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-100 md:text-xl">
               {pageSummary}
             </p>
           </div>
