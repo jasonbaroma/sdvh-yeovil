@@ -282,7 +282,7 @@ export function HomePage({
   secondaryCtaTitle,
   secondaryCtaDescription,
 }: HomePageProps) {
-  const heroBackgroundImage = heroImage ?? "{{HOMEPAGE_HERO_IMAGE}}";
+  const heroBackgroundImage = heroImage ?? "/images/homepage-hero-country-road.jpg";
   const resolvedHeroImageAlt =
     heroImageAlt ?? "Scenic country road for vehicle hire hero banner";
   const locationLinks = buildLocationLinks(currentLocationLabel);
@@ -291,83 +291,76 @@ export function HomePage({
     heroTitle ??
     (currentLocationLabel
       ? `Vehicle hire in ${currentLocationLabel}`
-      : "{{HERO_TITLE}}");
+      : "Vehicle Hire Barnstaple");
   const pageSummary =
     heroDescription ??
     (currentLocationLabel
       ? `Book reliable self-drive vehicle hire in ${currentLocationLabel} with free delivery, unlimited mileage options and friendly nationwide support.`
-      : "{{HERO_DESCRIPTION}}");
-  const resolvedServiceAreasTitle = serviceAreasTitle ?? "{{SERVICE_AREAS_TITLE}}";
+      : "Vehicle Hire Barnstaple for cars, vans, minibuses and trucks. Flexible rental options for personal travel, business use, local moves and longer UK journeys.");
+  const resolvedServiceAreasTitle = serviceAreasTitle ?? "Covering Barnstaple and nearby North Devon towns";
   const resolvedServiceAreasDescription =
-    serviceAreasDescription ?? "{{SERVICE_AREAS_DESCRIPTION}}";
+    serviceAreasDescription ?? "Based around Barnstaple, we cover North Devon towns and surrounding areas with self-drive car hire, van hire, minibus hire and truck hire for business and personal use.";
   const resolvedInfoContentSectionKicker =
-    infoContentSectionKicker ?? "{{INFO_CONTENT_SECTION_KICKER}}";
+    infoContentSectionKicker ?? "Local hire guidance";
   const resolvedInfoContentSectionTitle =
-    infoContentSectionTitle ?? "{{INFO_CONTENT_SECTION_TITLE}}";
+    infoContentSectionTitle ?? "Planning vehicle hire in and around Barnstaple";
   const resolvedInfoContentSectionIntro =
-    infoContentSectionIntro ?? "{{INFO_CONTENT_SECTION_INTRO}}";
+    infoContentSectionIntro ?? "Barnstaple sits at the centre of many everyday journeys in North Devon, so vehicle hire here is often about practicality. Whether you need extra load space, more seats or a reliable vehicle for a longer trip, the right rental can make local and regional travel much easier.";
   const resolvedInfoContentBlock1Title =
-    infoContentBlock1Title ?? "{{INFO_CONTENT_BLOCK_1_TITLE}}";
+    infoContentBlock1Title ?? "Getting around North Devon efficiently";
   const resolvedInfoContentBlock1Body =
-    infoContentBlock1Body ?? "{{INFO_CONTENT_BLOCK_1_BODY}}";
+    infoContentBlock1Body ?? "Barnstaple is a practical base for travel across North Devon, whether you are heading towards Braunton, Bideford, South Molton or the coast. Hiring locally can make sense when your own vehicle is too small, unavailable or simply not suited to the journey ahead.";
   const resolvedInfoContentBlock2Title =
-    infoContentBlock2Title ?? "{{INFO_CONTENT_BLOCK_2_TITLE}}";
+    infoContentBlock2Title ?? "Useful options for work and moving days";
   const resolvedInfoContentBlock2Body =
-    infoContentBlock2Body ?? "{{INFO_CONTENT_BLOCK_2_BODY}}";
+    infoContentBlock2Body ?? "Van and truck hire is often useful in Barnstaple for home moves, furniture collection, site work and trade deliveries. If you need the vehicle brought to your address or workplace, delivery can save time and simplify the day.";
   const resolvedInfoContentBlock3Title =
-    infoContentBlock3Title ?? "{{INFO_CONTENT_BLOCK_3_TITLE}}";
+    infoContentBlock3Title ?? "Choosing the right vehicle for the route";
   const resolvedInfoContentBlock3Body =
-    infoContentBlock3Body ?? "{{INFO_CONTENT_BLOCK_3_BODY}}";
-  const resolvedBottomCtaTitle = bottomCtaTitle ?? "{{BOTTOM_CTA_TITLE}}";
+    infoContentBlock3Body ?? "For family trips, group travel and longer drives through Devon and beyond, choosing the right size vehicle matters. A car, 7-seater or minibus can give you the extra room you need without turning the journey into a squeeze.";
+  const resolvedBottomCtaTitle = bottomCtaTitle ?? "Book the right vehicle for your trip";
   const resolvedBottomCtaDescription =
-    bottomCtaDescription ?? "{{BOTTOM_CTA_DESCRIPTION}}";
+    bottomCtaDescription ?? `Tell us what you need to move, carry or plan, and we will help you find a suitable hire vehicle in ${pageLocation}.`;
   const resolvedSecondaryCtaTitle =
-    secondaryCtaTitle ?? "{{SECONDARY_CTA_TITLE}}";
+    secondaryCtaTitle ?? `Talk through your ${pageLocation} hire plans`;
   const resolvedSecondaryCtaDescription =
-    secondaryCtaDescription ?? "{{SECONDARY_CTA_DESCRIPTION}}";
-  const resolvedHeroCardTitle = "Straightforward hire support";
-  const resolvedHeroCardPoint1 = "Cars to trucks";
-  const resolvedHeroCardPoint2 = "Delivery available";
-  const resolvedHeroCardPoint3 = "UK and one-way hire";
-  const resolvedChooseVehicleTitle = "Choose your vehicle";
-  const resolvedChooseVehicleDescription =
-    "Pick from cars, vans, minibuses and trucks to match the job.";
-  const resolvedWhyChooseSectionTitle =
-    "Why customers use our vehicle hire service";
-  const resolvedWhyChooseParagraph1 =
-    "Hiring a vehicle should feel straightforward, not drawn out. We focus on giving customers a clear route to the right car, van, minibus or truck, with flexible arrangements that work for both planned bookings and more urgent requirements.";
-  const resolvedWhyChooseParagraph2 =
-    "From local journeys to longer trips across the UK, we support a wide range of hire needs. Delivery and collection, one-way options and European travel on selected bookings all help make the service more useful in real situations.";
-  const resolvedVehicleTypesSectionTitle =
-    "A fleet for personal and business hire";
-  const resolvedVehicleTypesParagraph1 =
-    "Our fleet is built around the journeys people actually need to make. That means practical cars for everyday driving, vans for moving and deliveries, minibuses for group travel, and trucks for heavier-duty work.";
-  const resolvedVehicleTypesParagraph2 =
-    "Whether you need transport for a day, a week or longer, we help match the vehicle to the job. Availability varies by booking, but our aim is always to keep the process clear and the choice broad.";
-  const resolvedFaqSectionTitle = "Frequently asked questions";
+    secondaryCtaDescription ?? `If you want to compare vehicle sizes, trip suitability or delivery options in ${pageLocation}, speak to our team and we will help you narrow it down.`;
+  const resolvedHeroCardTitle = `Straightforward ${pageLocation} hire support`;
+  const resolvedHeroCardPoint1 = `${pageLocation} cars to trucks`;
+  const resolvedHeroCardPoint2 = `Delivery available in ${pageLocation}`;
+  const resolvedHeroCardPoint3 = "UK and one-way options";
+  const resolvedChooseVehicleTitle = `Choose your vehicle in ${pageLocation}`;
+  const resolvedChooseVehicleDescription = `Pick a vehicle that fits the journey, the load and the people travelling in and around ${pageLocation}.`;
+  const resolvedWhyChooseSectionTitle = `Why customers choose SDVH ${pageLocation}`;
+  const resolvedWhyChooseParagraph1 = `Hiring a vehicle in ${pageLocation} should feel clear and manageable, especially when time matters. We focus on practical self-drive rental with a broad fleet, helpful booking support and services that work for both personal and commercial use around ${pageLocation}.`;
+  const resolvedWhyChooseParagraph2 = `From short local jobs to longer planned journeys, we aim to make access to the right vehicle simpler for customers booking in ${pageLocation}. That includes everyday car hire, moving vans, group travel vehicles and heavier-duty transport with flexible options designed around real travel needs.`;
+  const resolvedVehicleTypesSectionTitle = `Vehicles for work, travel and transport in ${pageLocation}`;
+  const resolvedVehicleTypesParagraph1 = `Our fleet is set up for everyday driving, planned transport and specialist jobs in ${pageLocation}. Whether you need a compact car for local mileage, a van for moving stock, a minibus for group travel or a truck for heavier work, we offer practical self-drive choices backed by straightforward booking support.`;
+  const resolvedVehicleTypesParagraph2 = `We help customers hiring in ${pageLocation} arrange vehicles for short local runs, longer UK journeys, one-way moves and selected European travel. With a wide vehicle mix and guidance on choosing the right size, it is easier to book something that actually fits the job.`;
+  const resolvedFaqSectionTitle = `${pageLocation} vehicle hire FAQs`;
 
   const vehicleCategories = [
     {
       title: "Car",
-      description: "Flexible car hire for everyday travel and longer trips.",
+      description: `Cars for everyday travel, family use and longer journeys around ${pageLocation}.`,
       href: "#vehicle-types",
       image: "/images/CAR-150x150.png",
     },
     {
       title: "Van",
-      description: "Practical van hire for moves, deliveries and trade jobs.",
+      description: `Vans for moves, deliveries and business use in ${pageLocation}.`,
       href: "#vehicle-types",
       image: "/images/VAN-150x150.png",
     },
     {
       title: "Minibus",
-      description: "Minibus options for family travel, events and group use.",
+      description: `Minibuses for group outings, events and shared travel from ${pageLocation}.`,
       href: "#vehicle-types",
       image: "/images/MINI-BUS-150x150.png",
     },
     {
       title: "Truck",
-      description: "Truck hire for heavier transport and commercial work.",
+      description: `Trucks for heavier loads, trade work and site transport in ${pageLocation}.`,
       href: "#vehicle-types",
       image: "/images/TRUCK-150x150.png",
     },
@@ -376,64 +369,56 @@ export function HomePage({
   const benefits = [
     {
       title: "Free Delivery & Collection",
-      description:
-        "Delivery and collection options help cut down unnecessary travel and make it easier to arrange hire around work, family commitments or moving-day timing.",
+      description: `Free delivery and collection is available in many areas around ${pageLocation}, helping you get on the road without an extra trip to collect the vehicle. It is a simple option for home moves, business hires and busy schedules.`,
       icon: DeliveryCollectionIcon,
       iconClassName: "text-[var(--brand-green)]",
       iconWrapperClassName: "bg-transparent p-0",
     },
     {
       title: "Unlimited Rental Mileage",
-      description:
-        "Many bookings are arranged with mileage freedom in mind, which is useful for longer journeys, multi-stop travel and practical transport without constant distance tracking.",
+      description: `Unlimited mileage is available on many standard hires, making it easier to plan longer journeys from ${pageLocation} without constantly checking distance. It suits touring, repeat site visits and broad regional travel.`,
       icon: UnlimitedMileageIcon,
       iconClassName: "text-[var(--brand-green)]",
       iconWrapperClassName: "bg-transparent p-0",
     },
     {
       title: "Entire United Kingdom Coverage",
-      description:
-        "Our service is built to support customers across the UK, making it easier to book suitable vehicles for local use, regional travel and longer nationwide journeys.",
+      description: `Although we serve ${pageLocation} closely, our wider network supports hires across the UK. That means more flexibility for collection, delivery and longer-distance travel planning.`,
       icon: NationwideCoverageIcon,
       iconClassName: "text-[var(--brand-green)]",
       iconWrapperClassName: "bg-transparent p-0",
     },
     {
       title: "European Cover Option",
-      description:
-        "Selected bookings can be prepared for European travel when arranged in advance, giving customers more flexibility for business trips, relocations or longer planned routes.",
+      description: `Planning to take your hire vehicle abroad from ${pageLocation}? European travel can often be arranged on suitable vehicles, giving you a practical option for longer business trips, holidays and cross-border journeys.`,
       icon: EuropeanCoverIcon,
       iconClassName: "text-[var(--brand-green)]",
       iconWrapperClassName: "bg-transparent p-0",
     },
     {
       title: "One Way Vehicle Rental",
-      description:
-        "One-way hire can be a practical option when your journey does not finish where it starts, helping reduce wasted time and unnecessary return travel.",
+      description: `One-way hire is available on selected bookings, which is useful if your journey from ${pageLocation} starts in one place and ends in another. It can save time on relocations, business deliveries and planned route changes.`,
       icon: OneWayRentalsIcon,
       iconClassName: "text-[var(--brand-green)]",
       iconWrapperClassName: "bg-transparent p-0",
     },
     {
       title: "Insurance Is Included",
-      description:
-        "Hire arrangements include insurance support as standard, giving customers a clearer booking process and helping them plan with confidence before collecting the vehicle.",
+      description: `Insurance is included as part of the hire, so customers booking in ${pageLocation} can plan with a clearer idea of what is covered. Our team can explain the details and help you choose the right vehicle for the job.`,
       icon: InsuranceIncludedIcon,
       iconClassName: "text-[var(--brand-green)]",
       iconWrapperClassName: "bg-transparent p-0",
     },
     {
       title: "Company Own Insurance - 10%",
-      description:
-        "Business customers who already have suitable cover in place may be able to arrange hire on their own insurance terms, which can be helpful for regular commercial use.",
+      description: `If you already have suitable cover in place, speak to our team when booking in ${pageLocation}. We can confirm whether an own-insurance arrangement is possible on your chosen vehicle.`,
       icon: OwnInsuranceDiscountIcon,
       iconClassName: "text-[var(--brand-green)]",
       iconWrapperClassName: "bg-transparent p-0",
     },
     {
       title: "Wide Range Available",
-      description:
-        "From smaller cars and practical vans to minibuses and heavier-duty trucks, the fleet is designed to cover a wide range of everyday and specialist transport needs.",
+      description: `From everyday cars to practical vans, minibuses and heavier trucks, we offer a broad rental range for personal and commercial use in ${pageLocation}. That makes it easier to match the vehicle to the journey, rather than compromise.`,
       icon: WideVehicleChoiceIcon,
       iconClassName: "text-[var(--brand-green)]",
       iconWrapperClassName: "bg-transparent p-0",
@@ -444,34 +429,26 @@ export function HomePage({
     {
       title: "Car Hire",
       image: "/images/CarRental.jpg",
-      description:
-        "Car hire covers everything from compact everyday models to larger family-friendly and automatic options for more comfortable longer-distance travel.",
-      details:
-        "Whether you need something simple for day-to-day journeys or a more spacious vehicle for weekend plans, we can help match the booking to the type of driving you expect to do.",
+      description: `Our car hire range in ${pageLocation} covers everything from simple runaround models to family cars, automatics, executive options and larger 7-seaters for passengers and luggage.`,
+      details: `Car hire suits business appointments, weekend travel, replacement transport and longer journeys from ${pageLocation} where comfort matters. If you need something efficient for town driving or a roomier vehicle for family use, we can help point you to a practical match.`,
     },
     {
       title: "Van Hire",
       image: "/images/VanRental.jpg",
-      description:
-        "Van hire is well suited to home moves, deliveries, site work and practical transport where extra load space matters more than a standard car can offer.",
-      details:
-        "From smaller vans for urban use to larger Transit and Luton-style options, the range is aimed at customers who need dependable carrying space for work or moving tasks.",
+      description: `We supply vans in ${pageLocation} for home moves, business deliveries, stock collection and trade work, from compact models to larger panel vans and specialist load-carrying options.`,
+      details: "Choices can include smaller vans for light urban use, medium wheelbase vans for regular transport, and larger vehicles such as Transit-style vans, Lutons and tail-lift options where extra space or easier loading is needed.",
     },
     {
       title: "Minibus Hire",
       image: "/images/MinibusRental.jpg",
-      description:
-        "Minibus hire is useful for family travel, small events, airport runs and group journeys where keeping everyone together makes the trip easier to manage.",
-      details:
-        "With seating options suited to different group sizes, minibus bookings can work well for both planned leisure travel and practical shared transport needs.",
+      description: `Minibus hire is ideal when keeping a group together matters more than taking multiple cars. We offer practical options in ${pageLocation} for family events, sports trips and organised outings.`,
+      details: "Depending on the requirement, minibuses can suit smaller and larger groups with useful luggage space and straightforward self-drive convenience. They are often chosen for airport runs, celebrations, school-related travel and touring around the UK.",
     },
     {
       title: "Truck Hire",
       image: "/images/TruckRental.jpg",
-      description:
-        "Truck hire supports heavier transport needs, including commercial work, construction-related jobs, bulk loads and other tasks that need more than a van can handle.",
-      details:
-        "The truck range is intended for customers who need reliable working vehicles for demanding jobs, with options suited to practical business and trade use.",
+      description: `For heavier transport needs, our truck hire options in ${pageLocation} support site work, trade jobs and larger load movements that go beyond standard van capacity.`,
+      details: `Available vehicle types may include practical working formats such as tipper, dropside and curtain-side trucks, helping with materials, machinery, equipment or bulky stock. If the job needs stronger payload support, truck hire can be the right step up.`,
     },
   ];
 
@@ -479,24 +456,24 @@ export function HomePage({
     faqs ??
     [
       {
-        question: "{{FAQ_1_QUESTION}}",
-        answer: "{{FAQ_1_ANSWER}}",
+        question: "What types of vehicles can I hire?",
+        answer: "We provide car hire, van hire, minibus hire and truck hire, so you can book for anything from a weekend away to a business delivery or house move.",
       },
       {
-        question: "{{FAQ_2_QUESTION}}",
-        answer: "{{FAQ_2_ANSWER}}",
+        question: "Do you offer delivery and collection?",
+        answer: "Yes, delivery and collection is available in many areas. Let us know your location and preferred timing when you enquire, and we will confirm the options.",
       },
       {
-        question: "{{FAQ_3_QUESTION}}",
-        answer: "{{FAQ_3_ANSWER}}",
+        question: "Can I arrange a one-way rental?",
+        answer: "One-way hire is available on selected bookings. If you need to collect in one place and return elsewhere, we can check what works for your route.",
       },
       {
-        question: "{{FAQ_4_QUESTION}}",
-        answer: "{{FAQ_4_ANSWER}}",
+        question: "Can I take a hire vehicle to Europe?",
+        answer: "European travel can be arranged on suitable vehicles, but it needs to be agreed before travel. Contact us in advance so we can confirm availability and documents.",
       },
       {
-        question: "{{FAQ_5_QUESTION}}",
-        answer: "{{FAQ_5_ANSWER}}",
+        question: "Is unlimited mileage available?",
+        answer: "Many hires include unlimited mileage, depending on the vehicle and rental type. We will confirm this clearly when you book.",
       },
     ];
 
