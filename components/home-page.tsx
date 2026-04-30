@@ -814,13 +814,18 @@ export function HomePage({
       <footer className="border-t border-[var(--brand-green-dark)] bg-[var(--brand-green)] text-white">
         <div className="mx-auto grid max-w-7xl gap-10 px-6 py-14 md:grid-cols-[1.2fr_0.8fr]">
           <div>
-            <Image
-              src="/images/SDVH_logo.svg"
-              alt={companyName}
-              width={193}
-              height={62}
-              className="h-11 w-auto"
-            />
+            <div className="flex items-center gap-3">
+              <Image
+                src="/images/SDVH_logo.svg"
+                alt={companyName}
+                width={193}
+                height={62}
+                className="h-11 w-auto"
+              />
+              <span className="text-[2.63rem] font-semibold tracking-[-0.02em] text-white">
+                {mainLocationName}
+              </span>
+            </div>
           </div>
           <div>
             <h3 className="text-lg font-semibold text-white">Contact</h3>
