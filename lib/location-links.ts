@@ -78,5 +78,11 @@ export function buildLocationLinks(currentLocationLabel?: string) {
   return [mainLocationLink, ...filteredNearbyLinks];
 }
 
-export const locationSlugEntries = LOCATION_METADATA.map(({ label }, index) => ({`r`n  index: index + 1,`r`n  label,`r`n  county: LOCATION_METADATA[index]?.county ?? "",`r`n  region: LOCATION_METADATA[index]?.region ?? "",`r`n  slug: slugifyLocation(label),`r`n}));
+export const locationSlugEntries = LOCATION_METADATA.map(({ label }, index) => ({
+  index: index + 1,
+  label,
+  county: LOCATION_METADATA[index]?.county ?? "",
+  region: LOCATION_METADATA[index]?.region ?? "",
+  slug: slugifyLocation(label),
+}));
 export { mainLocationMetadata };
