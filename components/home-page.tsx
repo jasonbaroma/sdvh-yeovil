@@ -282,21 +282,29 @@ export function HomePage({
   secondaryCtaTitle,
   secondaryCtaDescription,
 }: HomePageProps) {
+  const textMatchesLocation = (text: string | undefined, location: string) => {
+    if (!text) return false;
+    return text.toLowerCase().includes(location.toLowerCase());
+  };
+
   const heroBackgroundImage = heroImage ?? "/images/homepage-hero-country-road.jpg";
   const resolvedHeroImageAlt =
     heroImageAlt ?? "Scenic country road for vehicle hire hero banner";
   const locationLinks = buildLocationLinks(currentLocationLabel);
   const pageLocation = currentLocationLabel || mainLocationName;
   const pageTitle =
-    heroTitle ??
-    (currentLocationLabel
-      ? `Vehicle hire in ${currentLocationLabel}`
-      : "Vehicle Hire Barnstaple");
+    currentLocationLabel
+      ? textMatchesLocation(heroTitle, currentLocationLabel)
+        ? heroTitle!
+        : `Vehicle Hire ${currentLocationLabel}`
+      : heroTitle ?? `Vehicle Hire ${mainLocationName}`;
   const pageSummary =
-    heroDescription ??
-    (currentLocationLabel
-      ? `Book reliable self-drive vehicle hire in ${currentLocationLabel} with free delivery, unlimited mileage options and friendly nationwide support.`
-      : "Vehicle Hire Barnstaple for cars, vans, minibuses and trucks. Flexible rental options for personal travel, business use, local moves and longer UK journeys.");
+    currentLocationLabel
+      ? textMatchesLocation(heroDescription, currentLocationLabel)
+        ? heroDescription!
+        : `Vehicle Hire ${currentLocationLabel} for local convenience and longer road trips. Flexible rental for cars, vans, minibuses and trucks, with practical support for home, work and transport needs.`
+      : heroDescription ??
+        `Vehicle Hire ${mainLocationName} for cars, vans, minibuses and trucks. Flexible rental options for personal travel, business use, local moves and longer UK journeys.`;
   const resolvedServiceAreasTitle = serviceAreasTitle ?? "Covering Barnstaple and nearby North Devon towns";
   const resolvedServiceAreasDescription =
     serviceAreasDescription ?? "Based around Barnstaple, we cover North Devon towns and surrounding areas with self-drive car hire, van hire, minibus hire and truck hire for business and personal use.";
