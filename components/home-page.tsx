@@ -299,6 +299,14 @@ export function HomePage({
     heroImageAlt ?? "Scenic country road for vehicle hire hero banner";
   const locationLinks = buildLocationLinks(currentLocationLabel);
   const pageLocation = currentLocationLabel || mainLocationName;
+  const nearbyAreaLabels = locationLinks
+    .filter((location) => location.href !== "/")
+    .map((location) => location.label)
+    .slice(0, 2);
+  const nearbyAreaText =
+    nearbyAreaLabels.length === 2
+      ? `${nearbyAreaLabels[0]} and ${nearbyAreaLabels[1]}`
+      : nearbyAreaLabels[0] ?? `nearby areas around ${pageLocation}`;
   const pageTitle =
     currentLocationLabel
       ? textMatchesLocation(heroTitle, currentLocationLabel)
@@ -376,8 +384,8 @@ export function HomePage({
   const resolvedChooseVehicleTitle = `Choose your vehicle in ${pageLocation}`;
   const resolvedChooseVehicleDescription = `Pick a vehicle that fits the journey, the load and the people travelling in and around ${pageLocation}.`;
   const resolvedWhyChooseSectionTitle = `Why customers choose SDVH ${pageLocation}`;
-  const resolvedWhyChooseParagraph1 = `Hiring a vehicle in ${pageLocation} should feel clear and manageable, especially when time matters. We focus on practical self-drive rental with a broad fleet, helpful booking support and services that work for both personal and commercial use around ${pageLocation}.`;
-  const resolvedWhyChooseParagraph2 = `From short local jobs to longer planned journeys, we aim to make access to the right vehicle simpler for customers booking in ${pageLocation}. That includes everyday car hire, moving vans, group travel vehicles and heavier-duty transport with flexible options designed around real travel needs.`;
+  const resolvedWhyChooseParagraph1 = `Customers booking in ${pageLocation} often need something practical rather than overcomplicated: a straightforward hire process, a vehicle that fits the job, and support that understands the mix of local roads, day-to-day travel and longer runs beyond town. We help with that across ${pageLocation} and routes towards ${nearbyAreaText}.`;
+  const resolvedWhyChooseParagraph2 = `That matters whether the booking is for a short local errand, a moving day, business use or a longer journey starting from ${pageLocation}. From cars and vans to minibuses and trucks, the focus stays on matching the vehicle to real travel needs in and around ${pageLocation}, not just offering a generic fleet list.`;
   const resolvedVehicleTypesSectionTitle = `Vehicles for work, travel and transport in ${pageLocation}`;
   const resolvedVehicleTypesParagraph1 = `Our fleet is set up for everyday driving, planned transport and specialist jobs in ${pageLocation}. Whether you need a compact car for local mileage, a van for moving stock, a minibus for group travel or a truck for heavier work, we offer practical self-drive choices backed by straightforward booking support.`;
   const resolvedVehicleTypesParagraph2 = `We help customers hiring in ${pageLocation} arrange vehicles for short local runs, longer UK journeys, one-way moves and selected European travel. With a wide vehicle mix and guidance on choosing the right size, it is easier to book something that actually fits the job.`;
