@@ -688,15 +688,15 @@ export function HomePage({
       <section className="px-6 py-16">
         <div className="mx-auto max-w-6xl overflow-hidden rounded-[18px] border-2 border-[var(--brand-green)] bg-[linear-gradient(120deg,rgba(248,251,250,0.98),rgba(238,247,240,0.9))]">
           <div className="px-8 py-12 text-center md:px-12">
-            <h2 className="text-4xl font-bold tracking-[-0.03em] text-[var(--brand-green)] md:text-6xl">
+            <h2 className="text-4xl font-bold tracking-[-0.03em] text-slate-950 md:text-6xl">
               {resolvedSecondaryCtaTitle}
             </h2>
-            <p className="mt-6 text-lg font-semibold leading-8 text-[var(--brand-green)]">
+            <p className="mt-6 text-lg font-semibold leading-8 text-slate-950">
               {resolvedSecondaryCtaDescription}
             </p>
             <Button
               size="lg"
-              className="mt-6 rounded-xl bg-[var(--brand-blue)] px-8 text-black hover:bg-[var(--brand-blue-dark)]"
+              className="mt-6 rounded-xl bg-[var(--brand-blue)] px-8 text-white hover:bg-[var(--brand-blue-dark)]"
               asChild
             >
               <a href={phoneHref}>Call: {phoneDisplay}</a>
@@ -794,15 +794,15 @@ export function HomePage({
       <section className="px-6 py-16">
         <div className="mx-auto max-w-6xl overflow-hidden rounded-[18px] border-2 border-[var(--brand-green)] bg-[linear-gradient(120deg,rgba(248,251,250,0.98),rgba(238,247,240,0.9))]">
           <div className="px-8 py-12 text-center md:px-12">
-            <h2 className="text-4xl font-bold tracking-[-0.03em] text-[var(--brand-green)] md:text-6xl">
+            <h2 className="text-4xl font-bold tracking-[-0.03em] text-slate-950 md:text-6xl">
               {resolvedBottomCtaTitle}
             </h2>
-            <p className="mt-6 text-lg font-semibold leading-8 text-[var(--brand-green)]">
+            <p className="mt-6 text-lg font-semibold leading-8 text-slate-950">
               {resolvedBottomCtaDescription}
             </p>
             <Button
               size="lg"
-              className="mt-6 rounded-xl bg-[var(--brand-blue)] px-8 text-black hover:bg-[var(--brand-blue-dark)]"
+              className="mt-6 rounded-xl bg-[var(--brand-blue)] px-8 text-white hover:bg-[var(--brand-blue-dark)]"
               asChild
             >
               <a href={phoneHref}>Call: {phoneDisplay}</a>
