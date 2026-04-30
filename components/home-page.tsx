@@ -691,12 +691,12 @@ export function HomePage({
             <h2 className="text-4xl font-bold tracking-[-0.03em] text-[var(--brand-green)] md:text-6xl">
               {resolvedSecondaryCtaTitle}
             </h2>
-            <p className="mt-6 text-lg font-semibold uppercase tracking-[0.06em] text-[var(--brand-green)]">
+            <p className="mt-6 text-lg font-semibold leading-8 text-[var(--brand-green)]">
               {resolvedSecondaryCtaDescription}
             </p>
             <Button
               size="lg"
-              className="mt-6 rounded-xl bg-[var(--brand-blue)] px-8 text-white hover:bg-[var(--brand-blue-dark)]"
+              className="mt-6 rounded-xl bg-[var(--brand-blue)] px-8 text-black hover:bg-[var(--brand-blue-dark)]"
               asChild
             >
               <a href={phoneHref}>Call: {phoneDisplay}</a>
@@ -797,12 +797,12 @@ export function HomePage({
             <h2 className="text-4xl font-bold tracking-[-0.03em] text-[var(--brand-green)] md:text-6xl">
               {resolvedBottomCtaTitle}
             </h2>
-            <p className="mt-6 text-lg font-semibold uppercase tracking-[0.06em] text-[var(--brand-green)]">
+            <p className="mt-6 text-lg font-semibold leading-8 text-[var(--brand-green)]">
               {resolvedBottomCtaDescription}
             </p>
             <Button
               size="lg"
-              className="mt-6 rounded-xl bg-[var(--brand-blue)] px-8 text-white hover:bg-[var(--brand-blue-dark)]"
+              className="mt-6 rounded-xl bg-[var(--brand-blue)] px-8 text-black hover:bg-[var(--brand-blue-dark)]"
               asChild
             >
               <a href={phoneHref}>Call: {phoneDisplay}</a>
