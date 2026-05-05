@@ -1,6 +1,20 @@
-"use client";
+import type { Metadata } from "next";
 
 import { HomePage } from "@/components/home-page";
+import { resolvedMainLocationName } from "@/lib/company";
+
+export async function generateMetadata(): Promise<Metadata> {
+  const metaTitle = `Vehicle Hire ${resolvedMainLocationName} | Cars, Vans, Minibuses & Trucks`;
+  const metaDescription = `Vehicle hire in ${resolvedMainLocationName} for cars, vans, minibuses and trucks. Practical self-drive options with flexible booking, local support and wide area coverage.`;
+
+  return {
+    title: metaTitle,
+    description: metaDescription,
+    alternates: {
+      canonical: "/",
+    },
+  };
+}
 
 export default function Home() {
   const homepageHeroImage = {
